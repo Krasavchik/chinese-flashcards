@@ -4,9 +4,9 @@ var ReactDOM = require('react-dom')
 const Pinyin = React.createClass({
     render: function() {
         return <li className="list-group-item text-xs-center">
-            <p className="text-muted lead">
+            <h2 className="text-muted">
                 {this.props.pinyin}
-            </p>
+            </h2>
         </li>;
     }
 });
@@ -89,13 +89,12 @@ const Flashcards = React.createClass({
     },
 
     switchcard: function(){
-        /*
+
         ga('send', {
               hitType: 'event',
               eventCategory: 'SwitchCard',
               eventAction: 'SwitchCard'
         });
-*/
 
         if ( this.state.learn ) {
 

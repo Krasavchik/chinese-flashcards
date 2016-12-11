@@ -68,8 +68,8 @@
 	            'li',
 	            { className: 'list-group-item text-xs-center' },
 	            React.createElement(
-	                'p',
-	                { className: 'text-muted lead' },
+	                'h2',
+	                { className: 'text-muted' },
 	                this.props.pinyin
 	            )
 	        );
@@ -170,13 +170,12 @@
 	    },
 	
 	    switchcard: function () {
-	        /*
+	
 	        ga('send', {
-	              hitType: 'event',
-	              eventCategory: 'SwitchCard',
-	              eventAction: 'SwitchCard'
+	            hitType: 'event',
+	            eventCategory: 'SwitchCard',
+	            eventAction: 'SwitchCard'
 	        });
-	        */
 	
 	        if (this.state.learn) {
 	

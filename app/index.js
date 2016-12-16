@@ -41,14 +41,17 @@ const Flashcards = React.createClass({
 
     getInitialState: function(){
 
-        var word = words[Math.floor(Math.random()*words.length)];
+        var index = Math.floor(Math.random()*words.length);
 
         var returnState = {
+            current: index,
+            count: 1,
             learn: true ,
-            ideogram: word.ideogram ,
-            pinyin: word.pinyin ,
-            traduction: word.traduction ,
+            ideogram: words[index].ideogram ,
+            pinyin: words[index].pinyin ,
+            traduction: words[index].traduction ,
             way: true ,
+            prior_target: words[index].last_try,
             is_sound: true ,
             is_pinyin : true
         } ;
@@ -61,7 +64,6 @@ const Flashcards = React.createClass({
         key( 'space', this.switchcard );
         key( 'left', this.backIt );
         key( 'enter', this.sayWord );
-
     },
 
     changeWay: function() {
@@ -88,13 +90,22 @@ const Flashcards = React.createClass({
         }
     },
 
-    switchcard: function(){
+    makeid: function () {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-        ga('send', {
-              hitType: 'event',
-              eventCategory: 'SwitchCard',
-              eventAction: 'SwitchCard'
-        });
+        for( var i=0; i < 8; i++ )
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    },
+
+    skip: function(){
+        words[this.state.current].last_try = "skip";
+        this.nextword();
+    },
+
+    switchcard: function(){
 
         if ( this.state.learn ) {
 
@@ -104,16 +115,11 @@ const Flashcards = React.createClass({
 
             this.sayWord();
 
+            words[this.state.current].last_try = "show";
+
         } else {
 
-            var word = words[Math.floor(Math.random()*words.length)];
-
-            this.setState({
-                learn: true ,
-                ideogram: word.ideogram ,
-                pinyin: word.pinyin ,
-                traduction: word.traduction
-            });
+            this.nextword();
 
         }
 
@@ -133,14 +139,44 @@ const Flashcards = React.createClass({
 
     nextword: function(){
 
-        var word = words[Math.floor(Math.random()*words.length)];
+        this.setState({
+            count: this.state.count + 1,
+        });
+
+        var el = words[this.state.current];
+
+        var prior_target = this.state.prior_target;
+
+        el.count = el.count + 1;
+
+        var elword = el.pinyin;
+        var target = el.last_try;
+        var elcount = el.count;
+        var last_show = el.last_show;
+        var duration = this.state.count - el.last_show;
+        var eltype = el.type;
+
+        index = Math.floor(Math.random()*words.length);
 
         this.setState({
+            current: index,
             learn: true ,
-            ideogram: word.ideogram ,
-            pinyin: word.pinyin ,
-            traduction: word.traduction
+            ideogram: words[index].ideogram ,
+            pinyin: words[index].pinyin ,
+            traduction: words[index].traduction ,
+            prior_target: words[index].last_try
         });
+
+
+        console.log(prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid());
+        /*
+        ga('send', {
+             hitType: 'event',
+             eventCategory: 'TrainingData#1',
+             eventAction: prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype
+       });*/
+
+       el.last_show = this.state.count;
 
     },
 
@@ -176,6 +212,9 @@ const Flashcards = React.createClass({
                             <a href="#" className="btn btn-primary btn-block" onClick={this.switchcard}>
                                 Solution
                             </a>
+                            <a href="#" className="btn btn-info btn-block" onClick={this.skip}>
+                                Passer
+                            </a>
                         </div>
                     </div>
                     <div className={ this.state.learn ? 'card hidden-xs-up' : 'card' }>
@@ -184,8 +223,8 @@ const Flashcards = React.createClass({
                         </div>
                         <Solution ideogram={this.state.ideogram} pinyin={this.state.pinyin} traduction={this.state.traduction} way={this.state.way} is_pinyin={this.state.is_pinyin} />
                         <div className="card-block">
-                            <a href="#" className="btn btn-primary btn-block" onClick={this.switchcard}>
-                                Lettre suivante ↦
+                            <a href="#" className="btn btn-primary btn-block" onClick={this.nextword}>
+                                Mot suivant ↦
                             </a>
                         </div>
                     </div>

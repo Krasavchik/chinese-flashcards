@@ -245,11 +245,9 @@
 	            prior_target: words[index].last_try
 	        });
 	
-	        //console.log(prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid());
-	
 	        ga('send', {
 	            hitType: 'event',
-	            eventCategory: 'TrainingData#0',
+	            eventCategory: 'TrainingData#1',
 	            eventAction: prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid()
 	        });
 	

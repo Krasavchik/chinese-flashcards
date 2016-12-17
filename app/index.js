@@ -209,12 +209,18 @@ const Flashcards = React.createClass({
                         </div>
                         <Mute ideogram={this.state.ideogram} pinyin={this.state.pinyin} traduction={this.state.traduction} way={this.state.way} is_pinyin={this.state.is_pinyin}/>
                         <div className="card-block">
-                            <a href="#" className="btn btn-primary btn-block" onClick={this.switchcard}>
-                                Solution
-                            </a>
-                            <a href="#" className="btn btn-info btn-block" onClick={this.skip}>
-                                Passer
-                            </a>
+                            <div className="row button_zone">
+                                <div className="col-xs-6">
+                                    <a href="#" className="btn btn-info btn-block" onClick={this.skip}>
+                                        Passer
+                                    </a>
+                                </div>
+                                <div className="col-xs-6">
+                                    <a href="#" className="btn btn-primary btn-block" onClick={this.switchcard}>
+                                        Solution
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className={ this.state.learn ? 'card hidden-xs-up' : 'card' }>

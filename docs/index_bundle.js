@@ -311,14 +311,26 @@
 	                            'div',
 	                            { className: 'card-block' },
 	                            React.createElement(
-	                                'a',
-	                                { href: '#', className: 'btn btn-primary btn-block', onClick: this.switchcard },
-	                                'Solution'
-	                            ),
-	                            React.createElement(
-	                                'a',
-	                                { href: '#', className: 'btn btn-info btn-block', onClick: this.skip },
-	                                'Passer'
+	                                'div',
+	                                { className: 'row button_zone' },
+	                                React.createElement(
+	                                    'div',
+	                                    { className: 'col-xs-6' },
+	                                    React.createElement(
+	                                        'a',
+	                                        { href: '#', className: 'btn btn-info btn-block', onClick: this.skip },
+	                                        'Passer'
+	                                    )
+	                                ),
+	                                React.createElement(
+	                                    'div',
+	                                    { className: 'col-xs-6' },
+	                                    React.createElement(
+	                                        'a',
+	                                        { href: '#', className: 'btn btn-primary btn-block', onClick: this.switchcard },
+	                                        'Solution'
+	                                    )
+	                                )
 	                            )
 	                        )
 	                    ),

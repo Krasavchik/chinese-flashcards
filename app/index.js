@@ -167,11 +167,13 @@ const Flashcards = React.createClass({
             prior_target: words[index].last_try
         });
 
-        ga('send', {
-             hitType: 'event',
-             eventCategory: 'TrainingData#1',
-             eventAction: prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid()
-       });
+        if( prior_target != "new" ){
+            ga('send', {
+                 hitType: 'event',
+                 eventCategory: 'TrainingData#1',
+                 eventAction: prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid()
+           });
+        }
 
        el.last_show = this.state.count;
 

@@ -168,13 +168,13 @@ const Flashcards = React.createClass({
         });
 
 
-        console.log(prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid());
-        /*
+        //console.log(prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid());
+
         ga('send', {
              hitType: 'event',
-             eventCategory: 'TrainingData#1',
-             eventAction: prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype
-       });*/
+             eventCategory: 'TrainingData#0',
+             eventAction: prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid()
+       });
 
        el.last_show = this.state.count;
 

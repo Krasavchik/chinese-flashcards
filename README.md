@@ -1,4 +1,4 @@
-# React FlashPan
+# Chinese Flashcards
 
 Install dependencies:
 

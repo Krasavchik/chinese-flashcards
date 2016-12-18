@@ -1,2 +1,4 @@
 .DS_Store
 node_modules/
+R/scripts/.Rhistory
+R/data/flashcardsdata.csv

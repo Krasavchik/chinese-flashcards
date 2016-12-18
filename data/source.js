@@ -740,5 +740,285 @@ var words = [
     "traduction": "écouter",
     "leçon": "27",
     "type": "verbe"
+  },
+  {
+    "ideogram": "翻译",
+    "pinyin": "fānyì",
+    "traduction": "traductrice",
+    "leçon": "13",
+    "type": "nom"
+  },
+  {
+    "ideogram": "会",
+    "pinyin": "huì",
+    "traduction": "savoir",
+    "leçon": "13",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "英语",
+    "pinyin": "yīngyǔ",
+    "traduction": "anglais (langue)",
+    "leçon": "13",
+    "type": "nom"
+  },
+  {
+    "ideogram": "汉语",
+    "pinyin": "hànyǔ",
+    "traduction": "chinois (langue)",
+    "leçon": "13",
+    "type": "nom"
+  },
+  {
+    "ideogram": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "traduction": "un peu",
+    "leçon": "13",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "说",
+    "pinyin": "shuō",
+    "traduction": "parler",
+    "leçon": "13",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "写",
+    "pinyin": "xiě",
+    "traduction": "écrire",
+    "leçon": "13",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "明天",
+    "pinyin": "míngtiān",
+    "traduction": "demain",
+    "leçon": "15",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "家",
+    "pinyin": "jiā",
+    "traduction": "maison",
+    "leçon": "15",
+    "type": "nom"
+  },
+  {
+    "ideogram": "回家",
+    "pinyin": "huí jiā",
+    "traduction": "rentrer à la maison",
+    "leçon": "15",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "远",
+    "pinyin": "yuǎn",
+    "traduction": "loin",
+    "leçon": "15",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "车",
+    "pinyin": "chē",
+    "traduction": "voiture",
+    "leçon": "15",
+    "type": "nom"
+  },
+  {
+    "ideogram": "开车",
+    "pinyin": "kāi-chē",
+    "traduction": "conduire (voiture)",
+    "leçon": "15",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "骑自行车",
+    "pinyin": "qí zìxíngchē",
+    "traduction": "à bicyclette",
+    "leçon": "15",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "票",
+    "pinyin": "piào",
+    "traduction": "ticket, billet",
+    "leçon": "16",
+    "type": "nom"
+  },
+  {
+    "ideogram": "快",
+    "pinyin": "kuài",
+    "traduction": "vite",
+    "leçon": "16",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "火车",
+    "pinyin": "huǒchē",
+    "traduction": "train",
+    "leçon": "16",
+    "type": "nom"
+  },
+  {
+    "ideogram": "几点",
+    "pinyin": "jǐ-diǎn",
+    "traduction": "à quelle heure",
+    "leçon": "16",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "开",
+    "pinyin": "kāi",
+    "traduction": "partir",
+    "leçon": "16",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "还",
+    "pinyin": "hái",
+    "traduction": "encore",
+    "leçon": "16",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "时间",
+    "pinyin": "shíjiān",
+    "traduction": "temps",
+    "leçon": "16",
+    "type": "nom"
+  },
+  {
+    "ideogram": "很多",
+    "pinyin": "hěn duō",
+    "traduction": "beaucoup",
+    "leçon": "16",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "够",
+    "pinyin": "gòu",
+    "traduction": "assez, suffisament",
+    "leçon": "16",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "想",
+    "pinyin": "xiǎng",
+    "traduction": "penser que",
+    "leçon": "16",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "一下",
+    "pinyin": "yí-xià",
+    "traduction": "un peu",
+    "leçon": "17",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "好象",
+    "pinyin": "hǎoxiàng",
+    "traduction": "sembler que",
+    "leçon": "17",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "下雨",
+    "pinyin": "xià-yǔ",
+    "traduction": "pleuvoir",
+    "leçon": "17",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "意思",
+    "pinyin": "yìsi",
+    "traduction": "intéressant, amusant",
+    "leçon": "17",
+    "type": "adjectif"
+  },
+  {
+    "ideogram": "待在",
+    "pinyin": "dāi-zài",
+    "traduction": "rester à",
+    "leçon": "17",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "有事儿",
+    "pinyin": "yǒu shìr",
+    "traduction": "avoir à faire",
+    "leçon": "17",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "热清",
+    "pinyin": "rèqing",
+    "traduction": "gentil",
+    "leçon": "22",
+    "type": "adjectif"
+  },
+  {
+    "ideogram": "以前",
+    "pinyin": "yǐqián",
+    "traduction": "avant",
+    "leçon": "22",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "刚",
+    "pinyin": "gāng",
+    "traduction": "venir de + action",
+    "leçon": "22",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "欢迎",
+    "pinyin": "huānyíng",
+    "traduction": "bienvenue",
+    "leçon": "22",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "学",
+    "pinyin": "xué",
+    "traduction": "étudier",
+    "leçon": "22",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "好极了",
+    "pinyin": "hǎo-jíle",
+    "traduction": "c'est formidable !",
+    "leçon": "22",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "毕业",
+    "pinyin": "bìyè",
+    "traduction": "être diplômé",
+    "leçon": "22",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "专业",
+    "pinyin": "zhuānyè",
+    "traduction": "spécialité",
+    "leçon": "22",
+    "type": "nom"
+  },
+  {
+    "ideogram": "历史",
+    "pinyin": "lìshǐ",
+    "traduction": "histoire (matière)",
+    "leçon": "22",
+    "type": "nom"
+  },
+  {
+    "ideogram": "抽",
+    "pinyin": "chōu",
+    "traduction": "fumer",
+    "leçon": "24",
+    "type": "verbe"
   }
 ];

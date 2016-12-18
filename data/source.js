@@ -287,6 +287,125 @@ var words = [
     "type": "verbe"
   },
   {
+    "ideogram": "妹妹",
+    "pinyin": "mèimei",
+    "traduction": "petite soeur",
+    "leçon": "11",
+    "type": "nom"
+  },
+  {
+    "ideogram": "朋友",
+    "pinyin": "péngyou",
+    "traduction": "ami",
+    "leçon": "11",
+    "type": "nom"
+  },
+  {
+    "ideogram": "中国人",
+    "pinyin": "zhōngguó-rén",
+    "traduction": "personne chinoise",
+    "leçon": "11",
+    "type": "nom"
+  },
+  {
+    "ideogram": "当然",
+    "pinyin": "dāngrán",
+    "traduction": "bien sur !",
+    "leçon": "11",
+    "type": "idiome"
+  },
+  {
+    "ideogram": "孩子",
+    "pinyin": "háizi",
+    "traduction": "enfant",
+    "leçon": "11",
+    "type": "nom"
+  },
+  {
+    "ideogram": "几个",
+    "pinyin": "jǐ-ge",
+    "traduction": "combien",
+    "leçon": "11",
+    "type": "pronom interrogatif"
+  },
+  {
+    "ideogram": "知道",
+    "pinyin": "zhīdào",
+    "traduction": "savoir",
+    "leçon": "11",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "这个",
+    "pinyin": "zhèi-ge",
+    "traduction": "ce",
+    "leçon": "12",
+    "type": "pronom demonstratif"
+  },
+  {
+    "ideogram": "书包",
+    "pinyin": "shūbāo",
+    "traduction": "sac",
+    "leçon": "12",
+    "type": "nom"
+  },
+  {
+    "ideogram": "颜色",
+    "pinyin": "yánsè",
+    "traduction": "couleur",
+    "leçon": "12",
+    "type": "nom"
+  },
+  {
+    "ideogram": "喜欢",
+    "pinyin": "xǐhuan",
+    "traduction": "aimer (like)",
+    "leçon": "12",
+    "type": "verbe"
+  },
+  {
+    "ideogram": "漂亮",
+    "pinyin": "piàoliang",
+    "traduction": "joli",
+    "leçon": "12",
+    "type": "adjectif"
+  },
+  {
+    "ideogram": "贵",
+    "pinyin": "guì",
+    "traduction": "cher (coûteux)",
+    "leçon": "12",
+    "type": "adjectif"
+  },
+  {
+    "ideogram": "可是",
+    "pinyin": "kěshì",
+    "traduction": "mais",
+    "leçon": "12",
+    "type": "adverbe"
+  },
+  {
+    "ideogram": "大",
+    "pinyin": "dà",
+    "traduction": "grand",
+    "leçon": "12",
+    "type": "adjectif"
+  },
+  {
+    "ideogram": "怎么",
+    "pinyin": "zěnme",
+    "traduction": "comment",
+    "leçon": "12",
+    "type": "pronom interrogatif"
+  },
+  {
+    "ideogram": "小",
+    "pinyin": "xiǎo",
+    "traduction": "petit",
+    "leçon": "12",
+    "type": "adjectif"
+  },
+  {
     "ideogram": "病",
     "pinyin": "bìng",
     "traduction": "malade",

@@ -30,4 +30,3 @@ auc <- performance(pred, "auc")
 par(mfrow = c(1, 2))
 fancyRpartPlot(tree)
 plot(perf)
-perf@y.values[[1]]

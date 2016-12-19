@@ -172,16 +172,45 @@
 	        }
 	    },
 	
-	    makeid: function () {
-	        var text = "";
-	        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	    proba: function (a) {
+	        if (Math.random() < a) {
+	            return true;
+	        } else {
+	            return false;
+	        }
+	    },
 	
-	        for (var i = 0; i < 8; i++) text += possible.charAt(Math.floor(Math.random() * possible.length));
+	    treemodel: function (ind) {
+	        var word = words[ind];
+	        console.log(ind);
+	        if (word.last_try == "new") {
 	
-	        return text;
+	            return true;
+	        } else if (word.last_try == "show" || "new") {
+	
+	            if (word.type == "adverbe" || word.type == "idiome" || word.type == "pronom interrogatif") {
+	
+	                var duration = this.state.count - word.last_show;
+	
+	                if (duration >= 14) {
+	                    return this.proba(0.74);
+	                } else {
+	                    return this.proba(0.33);
+	                }
+	            } else {
+	                return this.proba(0.31);
+	            }
+	        } else {
+	            return this.proba(0.03);
+	        }
 	    },
 	
 	    skip: function () {
+	        ga('send', {
+	            hitType: 'event',
+	            eventCategory: 'Model#1result',
+	            eventAction: 'skip'
+	        });
 	        words[this.state.current].last_try = "skip";
 	        this.nextword();
 	    },
@@ -195,6 +224,14 @@
 	            });
 	
 	            this.sayWord();
+	
+	            if (words[this.state.current].last_try != "new") {
+	                ga('send', {
+	                    hitType: 'event',
+	                    eventCategory: 'Model#1result',
+	                    eventAction: 'show'
+	                });
+	            }
 	
 	            words[this.state.current].last_try = "show";
 	        } else {
@@ -227,14 +264,13 @@
 	
 	        el.count = el.count + 1;
 	
-	        var elword = el.pinyin;
-	        var target = el.last_try;
-	        var elcount = el.count;
-	        var last_show = el.last_show;
-	        var duration = this.state.count - el.last_show;
-	        var eltype = el.type;
+	        var show = false;
 	
-	        index = Math.floor(Math.random() * words.length);
+	        while (show == false) {
+	            index = Math.floor(Math.random() * words.length);
+	            show = this.treemodel(index);
+	            console.log(show);
+	        }
 	
 	        this.setState({
 	            current: index,
@@ -244,14 +280,6 @@
 	            traduction: words[index].traduction,
 	            prior_target: words[index].last_try
 	        });
-	
-	        if (prior_target != "new") {
-	            ga('send', {
-	                hitType: 'event',
-	                eventCategory: 'TrainingData#1',
-	                eventAction: prior_target + "," + target + "," + elword + "," + elcount + "," + last_show + "," + duration + "," + eltype + "," + this.makeid()
-	            });
-	        }
 	
 	        el.last_show = this.state.count;
 	    },

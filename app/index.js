@@ -128,11 +128,13 @@ const Flashcards = React.createClass({
     },
 
     skip: function(){
-        ga('send', {
-                 hitType: 'event',
-                 eventCategory: 'Model#1result',
-                 eventAction: 'skip'
-           });
+        if( words[this.state.current].last_try != "new" ){
+            ga('send', {
+                     hitType: 'event',
+                     eventCategory: 'Model#1result',
+                     eventAction: 'show'
+               });
+        }
         words[this.state.current].last_try = "skip";
         this.nextword();
     },

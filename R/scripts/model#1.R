@@ -12,7 +12,7 @@ train <- shuffled_dat[ train_indices , ]
 test_indices <- (round(0.7 * n) + 1):n
 test <- shuffled_dat[test_indices, ]
 
-tree <- rpart( target ~ last_try + word_drawn + drawn_before_this + type , train , method = "class")
+tree <- rpart( target ~ last_try + drawn_before_this + type , train , method = "class")
 
 # use model on test_dataset
 pred <- predict(tree, test , type = 'class')

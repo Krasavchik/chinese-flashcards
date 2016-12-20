@@ -91,7 +91,9 @@ const Flashcards = React.createClass({
     },
 
     proba: function(a){
-        if ( Math.random() < a ) {
+        var pr = Math.random();
+        console.log(pr);
+        if ( pr < a ) {
             return true;
         } else {
             return false;
@@ -100,31 +102,42 @@ const Flashcards = React.createClass({
 
     treemodel: function(ind){
         var word = words[ind];
-        console.log(ind);
+        console.log(word.last_try);
+        console.log(word.type);
+        console.log(this.state.count - word.last_show);
+
         if ( word.last_try == "new" ){
-
+            console.log("root node new")
             return true;
+        }
 
-        } else if ( word.last_try == "show" || "new" ){
+        if ( word.last_try == "skip" ){
+            console.log("root node skip");
+            return this.proba(0.03);
+        }
+
+        if ( word.last_try == "show" || "new" ){
 
             if ( word.type == "adverbe" || word.type == "idiome" || word.type == "pronom interrogatif" ) {
 
                 var duration = this.state.count - word.last_show;
 
                 if ( duration >= 14) {
+                    console.log("node 1.1.1");
                     return this.proba(0.74);
                 }
 
                 else {
                     return this.proba(0.33);
+                    console.log("node 1.1.2");
                 }
 
             } else {
+                console.log("node 1.2");
                 return this.proba(0.31);
             }
-        } else {
-            return this.proba(0.03);
         }
+
     },
 
     skip: function(){
@@ -196,7 +209,7 @@ const Flashcards = React.createClass({
         while(show == false){
             index = Math.floor(Math.random()*words.length);
             show = this.treemodel(index);
-            console.log(show);
+            console.log(show ? "%cshow" : "%cskip", "color: green; font-size:15px;");
         }
 
         this.setState({

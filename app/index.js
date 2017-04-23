@@ -19,7 +19,7 @@ const Mute = React.createClass({
                     {this.props.way ? this.props.traduction : this.props.ideogram}
                 </h1>
             </li>
-            {this.props.way ? '' : <Pinyin pinyin={this.props.pinyin} /> }
+            {this.props.way ? '' : ( this.props.is_pinyin ? <Pinyin pinyin={this.props.pinyin} /> : '' ) }
         </ul>;
     }
 });
@@ -92,7 +92,7 @@ const Flashcards = React.createClass({
 
     proba: function(a){
         var pr = Math.random();
-        console.log(pr);
+        //console.log(pr);
         if ( pr < a ) {
             return true;
         } else {
@@ -102,17 +102,17 @@ const Flashcards = React.createClass({
 
     treemodel: function(ind){
         var word = words[ind];
-        console.log(word.last_try);
-        console.log(word.type);
-        console.log(this.state.count - word.last_show);
+        //console.log(word.last_try);
+        //console.log(word.type);
+        //console.log(this.state.count - word.last_show);
 
         if ( word.last_try == "new" ){
-            console.log("root node new")
+            //console.log("root node new")
             return true;
         }
 
         if ( word.last_try == "skip" ){
-            console.log("root node skip");
+            //console.log("root node skip");
             return this.proba(0.03);
         }
 
@@ -123,17 +123,17 @@ const Flashcards = React.createClass({
                 var duration = this.state.count - word.last_show;
 
                 if ( duration >= 14) {
-                    console.log("node 1.1.1");
+                    //console.log("node 1.1.1");
                     return this.proba(0.74);
                 }
 
                 else {
                     return this.proba(0.33);
-                    console.log("node 1.1.2");
+                    //console.log("node 1.1.2");
                 }
 
             } else {
-                console.log("node 1.2");
+                //console.log("node 1.2");
                 return this.proba(0.31);
             }
         }
@@ -209,7 +209,7 @@ const Flashcards = React.createClass({
         while(show == false){
             index = Math.floor(Math.random()*words.length);
             show = this.treemodel(index);
-            console.log(show ? "%cshow" : "%cskip", "color: green; font-size:15px;");
+            //console.log(show ? "%cshow" : "%cskip", "color: green; font-size:15px;");
         }
 
         this.setState({

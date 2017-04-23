@@ -39,11 +39,26 @@ const Solution = React.createClass({
 
 const Recap = React.createClass({
     render: function() {
+        var items = [];
+        words.map(function(word){
+            if( word.skip > 0 || word.show > 0){
+                items.push(word);
+            }
+        });
+
         return <ul>
-            <li>
-                text
-            </li>
+            {items.map(item => (
+                <RecapItem pinyin={item.pinyin} traduction={item.traduction} show={item.show} skip={item.skip}/>
+            ))}
         </ul>;
+    }
+});
+
+const RecapItem = React.createClass({
+    render: function() {
+        return <li key={this.props.id} >
+            {this.props.pinyin} / {this.props.traduction} / <span className="text-danger">{this.props.show}</span> / <span className="text-success">{this.props.skip}</span>
+        </li>;
     }
 });
 
@@ -159,6 +174,7 @@ const Flashcards = React.createClass({
                });
         }
         words[this.state.current].last_try = "skip";
+        words[this.state.current].skip++;
         this.nextword();
     },
 
@@ -181,6 +197,7 @@ const Flashcards = React.createClass({
             }
 
             words[this.state.current].last_try = "show";
+            words[this.state.current].show++;
 
         } else {
 

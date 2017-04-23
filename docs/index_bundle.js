@@ -122,13 +122,42 @@
 	    displayName: 'Recap',
 	
 	    render: function () {
+	        var items = [];
+	        words.map(function (word) {
+	            if (word.skip > 0 || word.show > 0) {
+	                items.push(word);
+	            }
+	        });
+	
 	        return React.createElement(
 	            'ul',
 	            null,
+	            items.map(item => React.createElement(RecapItem, { pinyin: item.pinyin, traduction: item.traduction, show: item.show, skip: item.skip }))
+	        );
+	    }
+	});
+	
+	const RecapItem = React.createClass({
+	    displayName: 'RecapItem',
+	
+	    render: function () {
+	        return React.createElement(
+	            'li',
+	            { key: this.props.id },
+	            this.props.pinyin,
+	            ' / ',
+	            this.props.traduction,
+	            ' / ',
 	            React.createElement(
-	                'li',
-	                null,
-	                'text'
+	                'span',
+	                { className: 'text-danger' },
+	                this.props.show
+	            ),
+	            ' / ',
+	            React.createElement(
+	                'span',
+	                { className: 'text-success' },
+	                this.props.skip
 	            )
 	        );
 	    }
@@ -243,6 +272,7 @@
 	            });
 	        }
 	        words[this.state.current].last_try = "skip";
+	        words[this.state.current].skip++;
 	        this.nextword();
 	    },
 	
@@ -265,6 +295,7 @@
 	            }
 	
 	            words[this.state.current].last_try = "show";
+	            words[this.state.current].show++;
 	        } else {
 	
 	            this.nextword();

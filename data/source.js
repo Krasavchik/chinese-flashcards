@@ -1,1164 +1,650 @@
 var words = [
   {
-    "ideogram": "饿",
-    "pinyin": "è",
-    "traduction": "avoir faim",
-    "leçon": "1",
-    "type": "verbe"
+    "id": 1,
+    "ideogram": "啊",
+    "pinyin": "ā",
+    "traduction": "ah ! oh !",
+    "leçon": "23,32",
+    "type": "idiome"
   },
   {
-    "ideogram": "累",
-    "pinyin": "lèi",
-    "traduction": "être fatigué",
-    "leçon": "1",
-    "type": "verbe"
+    "id": 2,
+    "ideogram": "啊呀",
+    "pinyin": "ā yā",
+    "traduction": "oh la la ! aïe !",
+    "leçon": "36,37",
+    "type": ""
   },
   {
-    "ideogram": "走",
-    "pinyin": "zǒu",
-    "traduction": "aller",
-    "leçon": "1",
-    "type": "verbe"
+    "id": 3,
+    "ideogram": "爱人",
+    "pinyin": "ài rén",
+    "traduction": "conjoint, femme, mari",
+    "leçon": "9, 30",
+    "type": ""
   },
   {
-    "ideogram": "什么",
-    "pinyin": "shénme",
-    "traduction": "quoi",
-    "leçon": "2",
-    "type": "pronom interrogatif"
+    "id": 4,
+    "ideogram": "安",
+    "pinyin": "ān",
+    "traduction": "paix",
+    "leçon": 25,
+    "type": ""
   },
   {
-    "ideogram": "饭",
-    "pinyin": "fàn",
-    "traduction": "riz",
-    "leçon": "2",
-    "type": "nom"
+    "id": 5,
+    "ideogram": "安静",
+    "pinyin": "ān jìng",
+    "traduction": "calme, paisible, tranquille",
+    "leçon": 9,
+    "type": ""
   },
   {
-    "ideogram": "汤",
-    "pinyin": "tāng",
-    "traduction": "soupe",
-    "leçon": "2",
-    "type": "nom"
+    "id": 6,
+    "ideogram": "八",
+    "pinyin": "bā",
+    "traduction": "huit",
+    "leçon": 8,
+    "type": ""
   },
   {
-    "ideogram": "菜",
-    "pinyin": "cài",
-    "traduction": "plat de résistance",
-    "leçon": "2",
-    "type": "nom"
+    "id": 7,
+    "ideogram": "巴黎",
+    "pinyin": "bā lí",
+    "traduction": "Paris",
+    "leçon": 24,
+    "type": ""
   },
   {
-    "ideogram": "面包",
-    "pinyin": "miànbāo",
-    "traduction": "pain",
-    "leçon": "2",
-    "type": "nom"
+    "id": 8,
+    "ideogram": "吧",
+    "pinyin": "bā",
+    "traduction": "(particule) n'est-ce pas ?",
+    "leçon": "12,24",
+    "type": ""
   },
   {
-    "ideogram": "要",
-    "pinyin": "yào",
-    "traduction": "vouloir",
-    "leçon": "2",
-    "type": "verbe"
+    "id": 9,
+    "ideogram": "百货商店",
+    "pinyin": "bǎi huò shāng diàn",
+    "traduction": "grand magasin",
+    "leçon": 24,
+    "type": ""
   },
   {
-    "ideogram": "也",
-    "pinyin": "yě",
-    "traduction": "aussi",
-    "leçon": "3",
-    "type": "adverbe"
+    "id": 10,
+    "ideogram": "班",
+    "pinyin": "bān",
+    "traduction": "(spécificatif)",
+    "leçon": 48,
+    "type": ""
   },
   {
-    "ideogram": "书",
-    "pinyin": "shū",
-    "traduction": "livre",
-    "leçon": "3",
-    "type": "nom"
+    "id": 11,
+    "ideogram": "办",
+    "pinyin": "bàn",
+    "traduction": "faire",
+    "leçon": 12,
+    "type": ""
   },
   {
-    "ideogram": "笔",
-    "pinyin": "bǐ",
-    "traduction": "crayon",
-    "leçon": "3",
-    "type": "nom"
+    "id": 12,
+    "ideogram": "半",
+    "pinyin": "bàn",
+    "traduction": "demi, et demie",
+    "leçon": 16,
+    "type": ""
   },
   {
+    "id": 13,
+    "ideogram": "半个小时",
+    "pinyin": "bàn gè xiǎo shí",
+    "traduction": "une demi-heure",
+    "leçon": 25,
+    "type": ""
+  },
+  {
+    "id": 14,
+    "ideogram": "半斤",
+    "pinyin": "bàn jīn",
+    "traduction": "une demi-livre",
+    "leçon": 44,
+    "type": ""
+  },
+  {
+    "id": 15,
+    "ideogram": "包饺子",
+    "pinyin": "bāo jiǎo zǐ",
+    "traduction": "faire des raviolis chinois",
+    "leçon": 39,
+    "type": ""
+  },
+  {
+    "id": 16,
     "ideogram": "报",
     "pinyin": "bào",
     "traduction": "journal",
-    "leçon": "3",
-    "type": "nom"
+    "leçon": 3,
+    "type": ""
   },
   {
-    "ideogram": "裤子",
-    "pinyin": "kùzi",
-    "traduction": "pantalon",
-    "leçon": "3",
-    "type": "nom"
+    "id": 17,
+    "ideogram": "北大",
+    "pinyin": "běi dà",
+    "traduction": "université de Pékin",
+    "leçon": 27,
+    "type": ""
   },
   {
-    "ideogram": "买",
-    "pinyin": "mǎi",
-    "traduction": "acheter",
-    "leçon": "3",
-    "type": "verbe"
+    "id": 18,
+    "ideogram": "北京",
+    "pinyin": "běi jīng",
+    "traduction": "Pékin",
+    "leçon": 33,
+    "type": ""
   },
   {
-    "ideogram": "就",
-    "pinyin": "jiù",
-    "traduction": "justement",
-    "leçon": "4",
-    "type": "adverbe"
+    "id": 19,
+    "ideogram": "北京话",
+    "pinyin": "běi jīng huà",
+    "traduction": "dialecte pékinois",
+    "leçon": 33,
+    "type": ""
   },
   {
-    "ideogram": "父亲",
-    "pinyin": "fùqin",
-    "traduction": "père",
-    "leçon": "4",
-    "type": "nom"
+    "id": 20,
+    "ideogram": "本",
+    "pinyin": "běn",
+    "traduction": "(spécificatif)",
+    "leçon": 45,
+    "type": ""
   },
   {
-    "ideogram": "谁",
-    "pinyin": "shéi",
-    "traduction": "qui",
-    "leçon": "4",
-    "type": "pronom interrogatif"
+    "id": 21,
+    "ideogram": "笔",
+    "pinyin": "bǐ",
+    "traduction": "crayon, stylo",
+    "leçon": 3,
+    "type": ""
   },
   {
-    "ideogram": "认识",
-    "pinyin": "rènshi",
-    "traduction": "connaître",
-    "leçon": "4",
-    "type": "verbe"
+    "id": 22,
+    "ideogram": "比方说",
+    "pinyin": "bǐ fāng shuō",
+    "traduction": "par exemple",
+    "leçon": "37,47",
+    "type": ""
   },
   {
-    "ideogram": "见",
-    "pinyin": "jiàn",
-    "traduction": "voir",
-    "leçon": "4",
-    "type": "verbe"
+    "id": 23,
+    "ideogram": "比较",
+    "pinyin": "bǐ jiào",
+    "traduction": "relativement, plutôt",
+    "leçon": 33,
+    "type": ""
   },
   {
-    "ideogram": "对不起",
-    "pinyin": "duìbuqǐ",
-    "traduction": "désolé",
-    "leçon": "5",
-    "type": "adjectif"
+    "id": 24,
+    "ideogram": "便饭",
+    "pinyin": "biàn fàn",
+    "traduction": "repas simple",
+    "leçon": 39,
+    "type": ""
   },
   {
-    "ideogram": "这儿",
-    "pinyin": "zhèr",
-    "traduction": "ici",
-    "leçon": "5",
-    "type": "adverbe"
+    "id": 25,
+    "ideogram": "表",
+    "pinyin": "biǎo",
+    "traduction": "montre",
+    "leçon": 48,
+    "type": ""
   },
   {
-    "ideogram": "画报",
-    "pinyin": "huàbào",
-    "traduction": "magazine",
-    "leçon": "5",
-    "type": "nom"
+    "id": 26,
+    "ideogram": "别的",
+    "pinyin": "bié de",
+    "traduction": "autre, les autres",
+    "leçon": 44,
+    "type": ""
   },
   {
-    "ideogram": "书店",
-    "pinyin": "shūdiàn",
-    "traduction": "librairie",
-    "leçon": "5",
-    "type": "nom"
+    "id": 27,
+    "ideogram": "病好了",
+    "pinyin": "bìng hǎo le",
+    "traduction": "être guéri",
+    "leçon": 45,
+    "type": ""
   },
   {
-    "ideogram": "邮局",
-    "pinyin": "yóujú",
-    "traduction": "bureau de poste",
-    "leçon": "5",
-    "type": "nom"
+    "id": 28,
+    "ideogram": "病了",
+    "pinyin": "bìng liǎo",
+    "traduction": "être malade",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "有",
-    "pinyin": "yǒu",
-    "traduction": "avoir",
-    "leçon": "5",
-    "type": "verbe"
+    "id": 29,
+    "ideogram": "不",
+    "pinyin": "bù",
+    "traduction": "non, ne pas",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "在",
-    "pinyin": "zài",
-    "traduction": "se trouver ici",
-    "leçon": "6",
-    "type": "verbe"
+    "id": 30,
+    "ideogram": "不错",
+    "pinyin": "bù cuò",
+    "traduction": "pas mal",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "太",
-    "pinyin": "tài",
-    "traduction": "trop",
-    "leçon": "8",
-    "type": "adverbe"
+    "id": 31,
+    "ideogram": "不见得",
+    "pinyin": "bù jiàn dé",
+    "traduction": "pas sûr",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "面",
-    "pinyin": "miàn",
-    "traduction": "nouilles",
-    "leçon": "8",
-    "type": "nom"
+    "id": 32,
+    "ideogram": "不是。。。吗？",
+    "pinyin": "bù shì...má ？",
+    "traduction": "n'est-ce pas ... ?",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "去",
-    "pinyin": "qù",
-    "traduction": "aller",
-    "leçon": "8",
-    "type": "verbe"
+    "id": 33,
+    "ideogram": "不舒服",
+    "pinyin": "bù shū fú",
+    "traduction": "pas en forme",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "吃饭",
-    "pinyin": "chīfàn",
-    "traduction": "manger",
-    "leçon": "8",
-    "type": "verbe"
+    "id": 34,
+    "ideogram": "不用",
+    "pinyin": "bù yòng",
+    "traduction": "pas la peine de",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "想",
-    "pinyin": "xiǎng",
-    "traduction": "avoir envie de",
-    "leçon": "8",
-    "type": "verbe"
+    "id": 35,
+    "ideogram": "不止",
+    "pinyin": "bù zhǐ",
+    "traduction": "pas uniquement",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "行",
-    "pinyin": "xíng",
-    "traduction": "ça marche !",
-    "leçon": "8",
-    "type": "verbe"
+    "id": 36,
+    "ideogram": "不止了吧！",
+    "pinyin": "bù zhǐ liǎo bā ！",
+    "traduction": "pas seulement ! pas uniquement, bien plus que ça !",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "安静",
-    "pinyin": "ānjìng",
-    "traduction": "tranquille",
-    "leçon": "9",
-    "type": "adjectif"
+    "id": 37,
+    "ideogram": "才",
+    "pinyin": "cái",
+    "traduction": "uniquement, seulement",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "幸亏",
-    "pinyin": "xìngkuī",
-    "traduction": "heureusement",
-    "leçon": "9",
-    "type": "adverbe"
+    "id": 38,
+    "ideogram": "菜",
+    "pinyin": "cài",
+    "traduction": "plats, mets, légumes",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "房子",
-    "pinyin": "fángzi",
-    "traduction": "appartement",
-    "leçon": "9",
-    "type": "nom"
+    "id": 39,
+    "ideogram": "参观",
+    "pinyin": "cān guān",
+    "traduction": "visiter",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "爱人",
-    "pinyin": "àiren",
-    "traduction": "conjoint",
-    "leçon": "9",
-    "type": "nom"
+    "id": 40,
+    "ideogram": "次",
+    "pinyin": "cì",
+    "traduction": "fois",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "住在",
-    "pinyin": "zhùzài",
-    "traduction": "habiter à",
-    "leçon": "9",
-    "type": "verbe"
+    "id": 41,
+    "ideogram": "茶",
+    "pinyin": "chá",
+    "traduction": "thé",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "那儿",
-    "pinyin": "nǎr",
-    "traduction": "où",
-    "leçon": "10",
-    "type": "adverbe"
+    "id": 42,
+    "ideogram": "长",
+    "pinyin": "cháng",
+    "traduction": "long",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "冷",
-    "pinyin": "lěng",
-    "traduction": "avoir froid",
-    "leçon": "10",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "出去",
-    "pinyin": "chūqu",
-    "traduction": "sortir",
-    "leçon": "10",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "妹妹",
-    "pinyin": "mèimei",
-    "traduction": "petite soeur",
-    "leçon": "11",
-    "type": "nom"
-  },
-  {
-    "ideogram": "朋友",
-    "pinyin": "péngyou",
-    "traduction": "ami",
-    "leçon": "11",
-    "type": "nom"
-  },
-  {
-    "ideogram": "中国人",
-    "pinyin": "zhōngguó-rén",
-    "traduction": "personne chinoise",
-    "leçon": "11",
-    "type": "nom"
-  },
-  {
-    "ideogram": "当然",
-    "pinyin": "dāngrán",
-    "traduction": "bien sur !",
-    "leçon": "11",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "孩子",
-    "pinyin": "háizi",
-    "traduction": "enfant",
-    "leçon": "11",
-    "type": "nom"
-  },
-  {
-    "ideogram": "几个",
-    "pinyin": "jǐ-ge",
-    "traduction": "combien",
-    "leçon": "11",
-    "type": "pronom interrogatif"
-  },
-  {
-    "ideogram": "知道",
-    "pinyin": "zhīdào",
-    "traduction": "savoir (être au courant)",
-    "leçon": "11",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "这个",
-    "pinyin": "zhèi-ge",
-    "traduction": "ce",
-    "leçon": "12",
-    "type": "pronom demonstratif"
-  },
-  {
-    "ideogram": "书包",
-    "pinyin": "shūbāo",
-    "traduction": "sac",
-    "leçon": "12",
-    "type": "nom"
-  },
-  {
-    "ideogram": "颜色",
-    "pinyin": "yánsè",
-    "traduction": "couleur",
-    "leçon": "12",
-    "type": "nom"
-  },
-  {
-    "ideogram": "喜欢",
-    "pinyin": "xǐhuan",
-    "traduction": "aimer (like)",
-    "leçon": "12",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "漂亮",
-    "pinyin": "piàoliang",
-    "traduction": "joli",
-    "leçon": "12",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "贵",
-    "pinyin": "guì",
-    "traduction": "cher (coûteux)",
-    "leçon": "12",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "可是",
-    "pinyin": "kěshì",
-    "traduction": "mais (long)",
-    "leçon": "12",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "大",
-    "pinyin": "dà",
-    "traduction": "grand",
-    "leçon": "12",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "怎么",
-    "pinyin": "zěnme",
-    "traduction": "comment",
-    "leçon": "12",
-    "type": "pronom interrogatif"
-  },
-  {
-    "ideogram": "小",
-    "pinyin": "xiǎo",
-    "traduction": "petit",
-    "leçon": "12",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "翻译",
-    "pinyin": "fānyì",
-    "traduction": "traductrice",
-    "leçon": "13",
-    "type": "nom"
-  },
-  {
-    "ideogram": "会",
-    "pinyin": "huì",
-    "traduction": "savoir (par apprentissage)",
-    "leçon": "13",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "英语",
-    "pinyin": "yīngyǔ",
-    "traduction": "anglais (langue)",
-    "leçon": "13",
-    "type": "nom"
-  },
-  {
-    "ideogram": "汉语",
-    "pinyin": "hànyǔ",
-    "traduction": "chinois (langue)",
-    "leçon": "13",
-    "type": "nom"
-  },
-  {
-    "ideogram": "一点儿",
-    "pinyin": "yìdiǎnr",
-    "traduction": "un peu",
-    "leçon": "13",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "说",
-    "pinyin": "shuō",
-    "traduction": "parler",
-    "leçon": "13",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "写",
-    "pinyin": "xiě",
-    "traduction": "écrire",
-    "leçon": "13",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "明天",
-    "pinyin": "míngtiān",
-    "traduction": "demain",
-    "leçon": "15",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "家",
-    "pinyin": "jiā",
-    "traduction": "maison",
-    "leçon": "15",
-    "type": "nom"
-  },
-  {
-    "ideogram": "回家",
-    "pinyin": "huí jiā",
-    "traduction": "rentrer à la maison",
-    "leçon": "15",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "远",
-    "pinyin": "yuǎn",
-    "traduction": "loin",
-    "leçon": "15",
-    "type": "adverbe"
-  },
-  {
+    "id": 43,
     "ideogram": "车",
     "pinyin": "chē",
-    "traduction": "voiture",
-    "leçon": "15",
-    "type": "nom"
+    "traduction": "voiture, bus",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "开车",
-    "pinyin": "kāi-chē",
-    "traduction": "conduire (voiture)",
-    "leçon": "15",
-    "type": "verbe"
+    "id": 44,
+    "ideogram": "成",
+    "pinyin": "chéng",
+    "traduction": "ville",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "骑自行车",
-    "pinyin": "qí zìxíngchē",
-    "traduction": "à bicyclette",
-    "leçon": "15",
-    "type": "idiome"
+    "id": 45,
+    "ideogram": "成立",
+    "pinyin": "chéng lì",
+    "traduction": "fonder",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "票",
-    "pinyin": "piào",
-    "traduction": "ticket, billet",
-    "leçon": "16",
-    "type": "nom"
+    "id": 46,
+    "ideogram": "吃",
+    "pinyin": "chī",
+    "traduction": "manger",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "快",
-    "pinyin": "kuài",
-    "traduction": "vite",
-    "leçon": "16",
-    "type": "adverbe"
+    "id": 47,
+    "ideogram": "吃饭",
+    "pinyin": "chī fàn",
+    "traduction": "manger",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "火车",
-    "pinyin": "huǒchē",
-    "traduction": "train",
-    "leçon": "16",
-    "type": "nom"
-  },
-  {
-    "ideogram": "几点",
-    "pinyin": "jǐ-diǎn",
-    "traduction": "à quelle heure",
-    "leçon": "16",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "开",
-    "pinyin": "kāi",
-    "traduction": "partir",
-    "leçon": "16",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "还",
-    "pinyin": "hái",
-    "traduction": "encore",
-    "leçon": "16",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "时间",
-    "pinyin": "shíjiān",
-    "traduction": "temps",
-    "leçon": "16",
-    "type": "nom"
-  },
-  {
-    "ideogram": "很多",
-    "pinyin": "hěn duō",
-    "traduction": "beaucoup",
-    "leçon": "16",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "够",
-    "pinyin": "gòu",
-    "traduction": "assez, suffisament",
-    "leçon": "16",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "想",
-    "pinyin": "xiǎng",
-    "traduction": "penser que",
-    "leçon": "16",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "一下",
-    "pinyin": "yí-xià",
-    "traduction": "un peu",
-    "leçon": "17",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "好象",
-    "pinyin": "hǎoxiàng",
-    "traduction": "sembler que",
-    "leçon": "17",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "下雨",
-    "pinyin": "xià-yǔ",
-    "traduction": "pleuvoir",
-    "leçon": "17",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "意思",
-    "pinyin": "yìsi",
-    "traduction": "intéressant, amusant",
-    "leçon": "17",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "待在",
-    "pinyin": "dāi-zài",
-    "traduction": "rester à",
-    "leçon": "17",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "有事儿",
-    "pinyin": "yǒu shìr",
-    "traduction": "avoir à faire",
-    "leçon": "17",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "病",
-    "pinyin": "bìng",
-    "traduction": "malade",
-    "leçon": "18",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "舒服",
-    "pinyin": "shūfu",
-    "traduction": "à l'aise / en forme",
-    "leçon": "18",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "什么时候",
-    "pinyin": "shénme shíhou",
-    "traduction": "quand / quelle heure",
-    "leçon": "18",
-    "type": "pronom interrogatif"
-  },
-  {
-    "ideogram": "这几天",
-    "pinyin": "zhè-jǐ tiān",
-    "traduction": "ces jours ci",
-    "leçon": "18",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "一定",
-    "pinyin": "yídìng",
-    "traduction": "sans faute",
-    "leçon": "18",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "姓",
-    "pinyin": "xìng",
-    "traduction": "nom de famille",
-    "leçon": "18",
-    "type": "nom"
-  },
-  {
-    "ideogram": "叫",
-    "pinyin": "jiào",
-    "traduction": "prénom",
-    "leçon": "18",
-    "type": "nom"
-  },
-  {
-    "ideogram": "回来",
-    "pinyin": "huílai",
-    "traduction": "rentrer",
-    "leçon": "18",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "告诉",
-    "pinyin": "gàosu",
-    "traduction": "avertir",
-    "leçon": "18",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "可能",
-    "pinyin": "kěnéng",
-    "traduction": "peut-être",
-    "leçon": "19",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "最好",
-    "pinyin": "zuìhǎo",
-    "traduction": "le mieux",
-    "leçon": "19",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "路",
-    "pinyin": "lù",
-    "traduction": "chemin, route",
-    "leçon": "19",
-    "type": "nom"
-  },
-  {
-    "ideogram": "来",
-    "pinyin": "lái",
-    "traduction": "venir",
-    "leçon": "19",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "等",
-    "pinyin": "děng",
-    "traduction": "attendre",
-    "leçon": "19",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "怕",
-    "pinyin": "pà",
-    "traduction": "craindre",
-    "leçon": "19",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "打听",
-    "pinyin": "dǎting",
-    "traduction": "se renseigner",
-    "leçon": "19",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "来晚",
-    "pinyin": "lái-wǎn",
-    "traduction": "arriver en retard",
-    "leçon": "19",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "还是",
-    "pinyin": "háishi",
-    "traduction": "ou bien",
-    "leçon": "20",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "现在",
-    "pinyin": "xiànzài",
-    "traduction": "maintenant",
-    "leçon": "20",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "一会",
-    "pinyin": "yìhuěr",
-    "traduction": "dans un moment",
-    "leçon": "20",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "忘",
-    "pinyin": "wàng",
-    "traduction": "oublier",
-    "leçon": "20",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "问",
-    "pinyin": "wèn",
-    "traduction": "questionner",
-    "leçon": "20",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "热清",
-    "pinyin": "rèqing",
-    "traduction": "gentil",
-    "leçon": "22",
-    "type": "adjectif"
-  },
-  {
-    "ideogram": "以前",
-    "pinyin": "yǐqián",
-    "traduction": "avant",
-    "leçon": "22",
-    "type": "adverbe"
-  },
-  {
-    "ideogram": "刚",
-    "pinyin": "gāng",
-    "traduction": "venir de + action",
-    "leçon": "22",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "欢迎",
-    "pinyin": "huānyíng",
-    "traduction": "bienvenue",
-    "leçon": "22",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "学",
-    "pinyin": "xué",
-    "traduction": "étudier",
-    "leçon": "22",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "好极了",
-    "pinyin": "hǎo-jíle",
-    "traduction": "c'est formidable !",
-    "leçon": "22",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "毕业",
-    "pinyin": "bìyè",
-    "traduction": "être diplômé",
-    "leçon": "22",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "专业",
-    "pinyin": "zhuānyè",
-    "traduction": "spécialité",
-    "leçon": "22",
-    "type": "nom"
-  },
-  {
-    "ideogram": "历史",
-    "pinyin": "lìshǐ",
-    "traduction": "histoire (matière)",
-    "leçon": "22",
-    "type": "nom"
-  },
-  {
+    "id": 48,
     "ideogram": "抽",
     "pinyin": "chōu",
     "traduction": "fumer",
-    "leçon": "23",
-    "type": "verbe"
+    "leçon": "",
+    "type": ""
   },
   {
+    "id": 49,
     "ideogram": "抽烟",
-    "pinyin": "chōu-yān",
-    "traduction": "fumer une cigarette",
-    "leçon": "23",
-    "type": "idiome"
+    "pinyin": "chōu yān",
+    "traduction": "fumer (une cigarette)",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "真",
-    "pinyin": "zhēn",
-    "traduction": "vraiment",
-    "leçon": "23",
-    "type": "adverbe"
+    "id": 50,
+    "ideogram": "出了事人",
+    "pinyin": "chū liǎo shì rén",
+    "traduction": "il est arrivé quelque chose",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "奇怪",
-    "pinyin": "qíguài",
-    "traduction": "étrange, bizarre",
-    "leçon": "23",
-    "type": "adjectif"
+    "id": 51,
+    "ideogram": "出去",
+    "pinyin": "chū qù",
+    "traduction": "sortir",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "看",
-    "pinyin": "kàn",
-    "traduction": "regarder",
-    "leçon": "23",
-    "type": "verbe"
+    "id": 52,
+    "ideogram": "打电话",
+    "pinyin": "dǎ diàn huà",
+    "traduction": "donner un coup de téléphone",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "烟",
-    "pinyin": "yān",
-    "traduction": "cigarette",
-    "leçon": "23",
-    "type": "nom"
+    "id": 53,
+    "ideogram": "大",
+    "pinyin": "dà",
+    "traduction": "grand",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "筷子",
-    "pinyin": "kuàizi",
-    "traduction": "baguettes",
-    "leçon": "23",
-    "type": "nom"
-  },
-  {
-    "ideogram": "用",
-    "pinyin": "yòng",
-    "traduction": "avec, au moyen de",
-    "leçon": "23",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "可",
-    "pinyin": "kě",
-    "traduction": "mais (court)",
-    "leçon": "23",
-    "type": "nom"
-  },
-  {
-    "ideogram": "礼拜天",
-    "pinyin": "lǐbài-tiān",
-    "traduction": "dimanche",
-    "leçon": "24",
-    "type": "nom"
-  },
-  {
-    "ideogram": "那儿",
-    "pinyin": "nàr",
-    "traduction": "là-bas",
-    "leçon": "24",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "跟(...一起)",
-    "pinyin": "gēn (... yìqǐ)",
-    "traduction": "avec (... ensemble)",
-    "leçon": "24",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "进城去",
-    "pinyin": "jìn-chéng qù",
-    "traduction": "aller en ville",
-    "leçon": "24",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "可以",
-    "pinyin": "kěyǐ",
-    "traduction": "pouvoir, c'est possible",
-    "leçon": "24",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "看看",
-    "pinyin": "kàn-kan",
-    "traduction": "jeter un coup d'oeil",
-    "leçon": "24",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "商店",
-    "pinyin": "shāngdiàn",
-    "traduction": "magasin",
-    "leçon": "24",
-    "type": "nom"
-  },
-  {
-    "ideogram": "饭馆儿",
-    "pinyin": "fànguǎnr",
-    "traduction": "restaurant",
-    "leçon": "24",
-    "type": "nom"
-  },
-  {
-    "ideogram": "接",
-    "pinyin": "jiē",
-    "traduction": "chercher",
-    "leçon": "24",
-    "type": "verbe"
-  },
-  {
+    "id": 54,
     "ideogram": "大概",
-    "pinyin": "dàgài",
+    "pinyin": "dà gài",
     "traduction": "vraisemblablement",
-    "leçon": "25",
-    "type": "adverbe"
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "先",
-    "pinyin": "xiān",
-    "traduction": "d'abord",
-    "leçon": "25",
-    "type": "adverbe"
+    "id": 55,
+    "ideogram": "大家",
+    "pinyin": "dà jiā",
+    "traduction": "tout le monde, tous",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "以后",
-    "pinyin": "yǐhòu",
-    "traduction": "ensuite",
-    "leçon": "25",
-    "type": "adverbe"
+    "id": 56,
+    "ideogram": "打牌",
+    "pinyin": "dǎ pái",
+    "traduction": "jouer aux cartes, au majhong",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "小时",
-    "pinyin": "xiǎoshí",
-    "traduction": "heure (60 min)",
-    "leçon": "25",
-    "type": "nom"
+    "id": 57,
+    "ideogram": "打桥牌",
+    "pinyin": "dǎ qiáo pái",
+    "traduction": "jouer au bridge",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "下午",
-    "pinyin": "xiàwǔ",
-    "traduction": "après midi",
-    "leçon": "25",
-    "type": "nom"
+    "id": 58,
+    "ideogram": "打算",
+    "pinyin": "dǎ suàn",
+    "traduction": "compter, avoir l'intention de",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "谁都",
-    "pinyin": "shéi dōu",
-    "traduction": "tout le monde",
-    "leçon": "25",
-    "type": "idiome"
+    "id": 59,
+    "ideogram": "打听",
+    "pinyin": "dǎ tīng",
+    "traduction": "se renseigner",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "请",
-    "pinyin": "qǐng",
-    "traduction": "prier de",
-    "leçon": "25",
-    "type": "verbe"
+    "id": 60,
+    "ideogram": "待",
+    "pinyin": "dài",
+    "traduction": "rester",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "上",
-    "pinyin": "shàng",
-    "traduction": "monter (dans)",
-    "leçon": "25",
-    "type": "verbe"
+    "id": 61,
+    "ideogram": "带",
+    "pinyin": "dài",
+    "traduction": "mener, conduire à",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "下",
-    "pinyin": "xià",
-    "traduction": "descendre (de)",
-    "leçon": "25",
-    "type": "verbe"
+    "id": 62,
+    "ideogram": "代表",
+    "pinyin": "dài biǎo",
+    "traduction": "représenter",
+    "leçon": "",
+    "type": ""
   },
   {
+    "id": 63,
+    "ideogram": "大夫",
+    "pinyin": "dà fū",
+    "traduction": "docteur",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 64,
+    "ideogram": "单位",
+    "pinyin": "dān wèi",
+    "traduction": "rattachement professionnel, organisme, unité de travail",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 65,
+    "ideogram": "当然",
+    "pinyin": "dāng rán",
+    "traduction": "bien sûr",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 66,
     "ideogram": "到",
     "pinyin": "dào",
-    "traduction": "arriver",
-    "leçon": "25",
-    "type": "verbe"
+    "traduction": "vers",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "快要",
-    "pinyin": "kuàiyào",
-    "traduction": "bientôt",
-    "leçon": "26",
-    "type": "adverbe"
+    "id": 67,
+    "ideogram": "到了",
+    "pinyin": "dào liǎo",
+    "traduction": "arrivé, atteindre",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "下个月",
-    "pinyin": "xiàge yuè",
-    "traduction": "le mois prochain",
-    "leçon": "26",
-    "type": "idiome"
+    "id": 68,
+    "ideogram": "的",
+    "pinyin": "dí",
+    "traduction": "(particule de détermination)",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "昨天",
-    "pinyin": "zuótiān",
-    "traduction": "hier",
-    "leçon": "26",
-    "type": "nom"
+    "id": 69,
+    "ideogram": "得",
+    "pinyin": "dé",
+    "traduction": "(particule introduisant le complément de manière)",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "决定",
-    "pinyin": "juédìng",
-    "traduction": "décider",
-    "leçon": "26",
-    "type": "verbe"
+    "id": 70,
+    "ideogram": "的时候",
+    "pinyin": "dí shí hòu",
+    "traduction": "lorsque, quand",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "结婚",
-    "pinyin": "jiéhūn",
-    "traduction": "se marier",
-    "leçon": "26",
-    "type": "verbe"
+    "id": 71,
+    "ideogram": "得",
+    "pinyin": "dé",
+    "traduction": "devoir, falloir",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "已经",
-    "pinyin": "yǐjīng",
-    "traduction": "déjà",
-    "leçon": "27",
-    "type": "adverbe"
+    "id": 72,
+    "ideogram": "等",
+    "pinyin": "děng",
+    "traduction": "attendre",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "当",
-    "pinyin": "dāng",
-    "traduction": "avoir la responsabilité de",
-    "leçon": "27",
-    "type": "verbe"
+    "id": 73,
+    "ideogram": "地方",
+    "pinyin": "dì fāng",
+    "traduction": "endroit, lieu",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "教",
-    "pinyin": "jiāo",
-    "traduction": "enseigner",
-    "leçon": "27",
-    "type": "verbe"
+    "id": 74,
+    "ideogram": "第一次",
+    "pinyin": "dì yī cì",
+    "traduction": "la première fois",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "肯定",
-    "pinyin": "kěndìng",
-    "traduction": "certainement",
-    "leçon": "27",
-    "type": "adverbe"
+    "id": 75,
+    "ideogram": "弟弟",
+    "pinyin": "dì dì",
+    "traduction": "frère cadet",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "为什么",
-    "pinyin": "wèishénme",
-    "traduction": "pourquoi",
-    "leçon": "27",
-    "type": "pronom interrogatif"
+    "id": 76,
+    "ideogram": "点",
+    "pinyin": "diǎn",
+    "traduction": "heure",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "因为",
-    "pinyin": "yīnwèi",
-    "traduction": "parce que",
-    "leçon": "27",
-    "type": "adverbe"
+    "id": 77,
+    "ideogram": "电子计算机",
+    "pinyin": "diàn zǐ jì suàn jī",
+    "traduction": "ordinateur, calculatrice",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "法国",
-    "pinyin": "fǎguó",
-    "traduction": "France",
-    "leçon": "27",
-    "type": "nom"
+    "id": 78,
+    "ideogram": "定好",
+    "pinyin": "dìng hǎo",
+    "traduction": "fixer (définitivement), déterminer",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "法国人",
-    "pinyin": "fǎguó-rén",
-    "traduction": "personne française",
-    "leçon": "27",
-    "type": "nom"
+    "id": 79,
+    "ideogram": "东京",
+    "pinyin": "dōng jīng",
+    "traduction": "Tokyo",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "怪不得",
-    "pinyin": "guài-bu-dé",
-    "traduction": "pas étonnant que",
-    "leçon": "27",
-    "type": "idiome"
+    "id": 80,
+    "ideogram": "东西",
+    "pinyin": "dōng xī",
+    "traduction": "chose",
+    "leçon": "",
+    "type": ""
   },
   {
-    "ideogram": "人家",
-    "pinyin": "rénjia",
-    "traduction": "les gens",
-    "leçon": "27",
-    "type": "nom"
-  },
-  {
-    "ideogram": "听",
-    "pinyin": "tīng",
-    "traduction": "écouter",
-    "leçon": "27",
-    "type": "verbe"
-  },
-  {
-    "ideogram": "再见",
-    "pinyin": "zàijiàn",
-    "traduction": "au revoir",
-    "leçon": "28",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "没关系",
-    "pinyin": "méi guānxi",
-    "traduction": "ça ne fait rien !",
-    "leçon": "28",
-    "type": "idiome"
-  },
-  {
-    "ideogram": "真的吗?",
-    "pinyin": "zhēn-de ma",
-    "traduction": "c'est bien vrai ?",
-    "leçon": "28",
-    "type": "idiome"
+    "id": 81,
+    "ideogram": "懂",
+    "pinyin": "dǒng",
+    "traduction": "comprendre",
+    "leçon": "",
+    "type": ""
   }
-];
+]

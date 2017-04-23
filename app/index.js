@@ -37,6 +37,16 @@ const Solution = React.createClass({
     }
 });
 
+const Recap = React.createClass({
+    render: function() {
+        return <ul>
+            <li>
+                text
+            </li>
+        </ul>;
+    }
+});
+
 const Flashcards = React.createClass({
 
     getInitialState: function(){
@@ -225,6 +235,10 @@ const Flashcards = React.createClass({
 
     },
 
+    recap: function(){
+        return words;
+    },
+
     render: function() {
         return <div className="container">
             <div className="row">
@@ -301,6 +315,11 @@ const Flashcards = React.createClass({
                     <span className="c-indicator"></span>
                         <small>Chinois ↦ Français</small>
                     </label>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-lg-4 col-lg-offset-4 text-xs-center">
+                    <Recap items={this.recap} />
                 </div>
             </div>
         </div>;

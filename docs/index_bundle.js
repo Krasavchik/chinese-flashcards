@@ -68,7 +68,7 @@
 	            'li',
 	            { className: 'list-group-item text-xs-center' },
 	            React.createElement(
-	                'h2',
+	                'h4',
 	                { className: 'text-muted' },
 	                this.props.pinyin
 	            )
@@ -87,7 +87,7 @@
 	                'li',
 	                { className: 'list-group-item text-xs-center text-primary' },
 	                React.createElement(
-	                    'h1',
+	                    'h3',
 	                    { className: 'text-primary' },
 	                    this.props.way ? this.props.traduction : this.props.ideogram
 	                )
@@ -108,7 +108,7 @@
 	                'li',
 	                { className: 'list-group-item text-xs-center' },
 	                React.createElement(
-	                    'h1',
+	                    'h3',
 	                    { className: 'text-success' },
 	                    this.props.way ? this.props.ideogram : this.props.traduction
 	                )
@@ -130,7 +130,7 @@
 	        });
 	
 	        return React.createElement(
-	            'ul',
+	            'div',
 	            null,
 	            items.map(item => React.createElement(RecapItem, { pinyin: item.pinyin, traduction: item.traduction, show: item.show, skip: item.skip }))
 	        );
@@ -142,7 +142,7 @@
 	
 	    render: function () {
 	        return React.createElement(
-	            'li',
+	            'p',
 	            { key: this.props.id },
 	            this.props.pinyin,
 	            ' / ',
@@ -181,6 +181,7 @@
 	            way: true,
 	            prior_target: words[index].last_try,
 	            is_sound: true,
+	            is_recap: false,
 	            is_pinyin: true
 	        };
 	
@@ -346,6 +347,10 @@
 	        el.last_show = this.state.count;
 	    },
 	
+	    toggleRecap: function () {
+	        this.setState({ is_recap: !this.state.is_recap });
+	    },
+	
 	    recap: function () {
 	        return words;
 	    },
@@ -493,12 +498,34 @@
 	                    )
 	                )
 	            ),
+	            React.createElement('br', null),
 	            React.createElement(
 	                'div',
 	                { className: 'row' },
 	                React.createElement(
 	                    'div',
 	                    { className: 'col-lg-4 col-lg-offset-4 text-xs-center' },
+	                    React.createElement(
+	                        'label',
+	                        { className: 'c-input c-checkbox' },
+	                        React.createElement('input', { type: 'checkbox', checked: this.state.is_recap, onChange: this.toggleRecap }),
+	                        React.createElement('span', { className: 'c-indicator' }),
+	                        React.createElement(
+	                            'small',
+	                            { className: 'text-muted' },
+	                            React.createElement('i', { className: 'fa fa-volume-up', 'aria-hidden': 'true' }),
+	                            ' Afficher r\xE9capitulatif'
+	                        )
+	                    )
+	                )
+	            ),
+	            React.createElement('br', null),
+	            React.createElement(
+	                'div',
+	                { className: 'row' },
+	                React.createElement(
+	                    'div',
+	                    { className: "col-lg-4 col-lg-offset-4 text-xs-center " + (this.state.is_recap ? '' : 'invisible') },
 	                    React.createElement(Recap, { items: this.recap })
 	                )
 	            )

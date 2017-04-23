@@ -4,9 +4,9 @@ var ReactDOM = require('react-dom')
 const Pinyin = React.createClass({
     render: function() {
         return <li className="list-group-item text-xs-center">
-            <h2 className="text-muted">
+            <h4 className="text-muted">
                 {this.props.pinyin}
-            </h2>
+            </h4>
         </li>;
     }
 });
@@ -15,9 +15,9 @@ const Mute = React.createClass({
     render: function() {
         return <ul className="list-group list-group-flush">
             <li className="list-group-item text-xs-center text-primary">
-                <h1 className="text-primary">
+                <h3 className="text-primary">
                     {this.props.way ? this.props.traduction : this.props.ideogram}
-                </h1>
+                </h3>
             </li>
             {this.props.way ? '' : ( this.props.is_pinyin ? <Pinyin pinyin={this.props.pinyin} /> : '' ) }
         </ul>;
@@ -28,9 +28,9 @@ const Solution = React.createClass({
     render: function() {
         return <ul className="list-group list-group-flush">
             <li className="list-group-item text-xs-center">
-                <h1 className="text-success">
+                <h3 className="text-success">
                     {this.props.way ? this.props.ideogram : this.props.traduction }
-                </h1>
+                </h3>
             </li>
             {this.props.is_pinyin ? <Pinyin pinyin={this.props.pinyin} /> : '' }
         </ul>;
@@ -46,19 +46,19 @@ const Recap = React.createClass({
             }
         });
 
-        return <ul>
+        return <div>
             {items.map(item => (
                 <RecapItem pinyin={item.pinyin} traduction={item.traduction} show={item.show} skip={item.skip}/>
             ))}
-        </ul>;
+        </div>;
     }
 });
 
 const RecapItem = React.createClass({
     render: function() {
-        return <li key={this.props.id} >
+        return <p key={this.props.id} >
             {this.props.pinyin} / {this.props.traduction} / <span className="text-danger">{this.props.show}</span> / <span className="text-success">{this.props.skip}</span>
-        </li>;
+        </p>;
     }
 });
 
@@ -78,6 +78,7 @@ const Flashcards = React.createClass({
             way: true ,
             prior_target: words[index].last_try,
             is_sound: true ,
+            is_recap: false ,
             is_pinyin : true
         } ;
 
@@ -252,6 +253,10 @@ const Flashcards = React.createClass({
 
     },
 
+    toggleRecap: function(){
+        this.setState({ is_recap: !this.state.is_recap });
+    },
+
     recap: function(){
         return words;
     },
@@ -334,8 +339,21 @@ const Flashcards = React.createClass({
                     </label>
                 </div>
             </div>
+            <br/>
             <div className="row">
                 <div className="col-lg-4 col-lg-offset-4 text-xs-center">
+                    <label className="c-input c-checkbox">
+                        <input type="checkbox" checked={this.state.is_recap} onChange={this.toggleRecap}/>
+                        <span className="c-indicator"></span>
+                        <small className= "text-muted">
+                            <i className="fa fa-volume-up" aria-hidden="true"></i> Afficher récapitulatif
+                        </small>
+                    </label>
+                </div>
+            </div>
+            <br/>
+            <div className="row">
+                <div className={"col-lg-4 col-lg-offset-4 text-xs-center " + ( this.state.is_recap ? '' : 'invisible' ) }>
                     <Recap items={this.recap} />
                 </div>
             </div>

@@ -474,7 +474,7 @@ var words = [
   {
     "id": 60,
     "ideogram": "待",
-    "pinyin": "dài",
+    "pinyin": "dāi",
     "traduction": "rester",
     "leçon": "",
     "type": ""
@@ -546,7 +546,7 @@ var words = [
   {
     "id": 69,
     "ideogram": "得",
-    "pinyin": "dé",
+    "pinyin": "de",
     "traduction": "(particule introduisant le complément de manière)",
     "leçon": "",
     "type": ""
@@ -866,7 +866,7 @@ var words = [
   {
     "id": 109,
     "ideogram": "放假",
-    "pinyin": "fàng jiǎ",
+    "pinyin": "fàng jià",
     "traduction": "partir en vacances",
     "leçon": "",
     "type": ""
@@ -1202,7 +1202,7 @@ var words = [
   {
     "id": 151,
     "ideogram": "还是。。。吧",
-    "pinyin": "hái shì 。 。 。 bā",
+    "pinyin": "hái shi 。 。 。 ba",
     "traduction": "le mieux serait que",
     "leçon": "",
     "type": ""
@@ -1340,6 +1340,246 @@ var words = [
     "ideogram": "很有意思",
     "pinyin": "hěn yǒu yì si",
     "traduction": "très amusant, très intéressant",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 169,
+    "ideogram": "红",
+    "pinyin": "hóng",
+    "traduction": "rouge",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 170,
+    "ideogram": "红茶",
+    "pinyin": "hóng chá",
+    "traduction": "thé noir",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 171,
+    "ideogram": "猴子",
+    "pinyin": "hóu zǐ",
+    "traduction": "singe",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 172,
+    "ideogram": "后天",
+    "pinyin": "hòu tiān",
+    "traduction": "après demain",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 173,
+    "ideogram": "花",
+    "pinyin": "huā",
+    "traduction": "dépenser",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 174,
+    "ideogram": "话",
+    "pinyin": "huà",
+    "traduction": "langue, langage",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 175,
+    "ideogram": "画报",
+    "pinyin": "huà bào",
+    "traduction": "revue illustrée",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 176,
+    "ideogram": "话剧",
+    "pinyin": "huà jù",
+    "traduction": "théâtre moderne",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 177,
+    "ideogram": "化学",
+    "pinyin": "huà xué",
+    "traduction": "chimie",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 178,
+    "ideogram": "欢迎",
+    "pinyin": "huān yíng",
+    "traduction": "bienvenue",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 179,
+    "ideogram": "还",
+    "pinyin": "huán",
+    "traduction": "rendre",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 180,
+    "ideogram": "还给",
+    "pinyin": "huán gěi",
+    "traduction": "rendre à",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 181,
+    "ideogram": "换",
+    "pinyin": "huàn",
+    "traduction": "changer de",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 182,
+    "ideogram": "回家",
+    "pinyin": "huí jiā",
+    "traduction": "rentrer chez soi, rentrer à la maison",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 183,
+    "ideogram": "回来",
+    "pinyin": "huí lái",
+    "traduction": "revenir, rentrer",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 184,
+    "ideogram": "会",
+    "pinyin": "huì",
+    "traduction": "probable que, savoir",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 185,
+    "ideogram": "火车",
+    "pinyin": "huǒ chē",
+    "traduction": "train",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 186,
+    "ideogram": "鸡",
+    "pinyin": "jī",
+    "traduction": "coq, poule",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 187,
+    "ideogram": "机场",
+    "pinyin": "jī cháng",
+    "traduction": "aéroport",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 188,
+    "ideogram": "极了",
+    "pinyin": "jí le",
+    "traduction": "extrêmement",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 189,
+    "ideogram": "几",
+    "pinyin": "jī",
+    "traduction": "quelques",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 190,
+    "ideogram": "几点？",
+    "pinyin": "jī diǎn ？",
+    "traduction": "à quelle heure ?",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 191,
+    "ideogram": "几点了？",
+    "pinyin": "jī diǎn le ？",
+    "traduction": "quelle heure est-il ?",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 192,
+    "ideogram": "几个？",
+    "pinyin": "jī gè ？",
+    "traduction": "combien de ... ?",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 193,
+    "ideogram": "几号？",
+    "pinyin": "jī hào ？",
+    "traduction": "quel numéro ? quel jour sommes nous ?",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 194,
+    "ideogram": "几岁了？",
+    "pinyin": "jī suì le ？",
+    "traduction": "quel âge ?",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 195,
+    "ideogram": "家",
+    "pinyin": "jiā",
+    "traduction": "maison, famille",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 196,
+    "ideogram": "家里",
+    "pinyin": "jiā lǐ",
+    "traduction": "à la maison, chez",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 197,
+    "ideogram": "见",
+    "pinyin": "jiàn",
+    "traduction": "voir, rencontrer",
+    "leçon": "",
+    "type": ""
+  },
+  {
+    "id": 198,
+    "ideogram": "讲",
+    "pinyin": "jiǎng",
+    "traduction": "parler, discuter, raconter",
     "leçon": "",
     "type": ""
   }
